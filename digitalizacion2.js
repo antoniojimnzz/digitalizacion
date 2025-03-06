@@ -1,6 +1,6 @@
 let boton = document.getElementById("boton")
 let numero_cuadros = 0;
-let contenedor = document.getElementById("contenedor");
+let cuadricula = document.getElementById("cuadricula");
 
 function sumarCuadro(){
     let nuevoDiv = document.createElement("div");
@@ -9,9 +9,9 @@ function sumarCuadro(){
 
     nuevoDiv.classList.add("cuadro")
 
-    contenedor.appendChild(nuevoDiv);
+    cuadricula.appendChild(nuevoDiv);
 }
-for(let contador=0;contador < 16;contador = contador + 1){
+for(let i = 0;i < 16;i = i + 1){
     sumarCuadro();
 }
 
