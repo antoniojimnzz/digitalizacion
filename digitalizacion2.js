@@ -1,4 +1,4 @@
-let boton = document.getElementById("boton")
+let boton = document.getElementById ("boton")
 let numero_cuadros = 0;
 let cuadricula = document.getElementById("cuadricula");
 
@@ -9,10 +9,10 @@ function sumarCuadro(){
 
     nuevoDiv.classList.add("cuadro")
 
+    console.log(nuevoDiv)
     cuadricula.appendChild(nuevoDiv);
 }
-for(let i = 0;i < 16;i = i + 1){
+for(let numero_cuadros = 0;numero_cuadros < 12;numero_cuadros = numero_cuadros + 1){
     sumarCuadro();
 }
 
-boton.addEventListener("click", sumarCuadro);

@@ -8,8 +8,7 @@ body{
 
 .contenedor{
     display:grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .contenedor2{
@@ -25,14 +24,28 @@ body{
 
 .cuadro{
     width: 200px;
-    height: 100px;
+    height: 200px;
     line-height: 100px;
-    background-color: lightsalmon;
-    color: rgb(255, 255, 255);
+    background-color: rgb(209, 89, 89);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 10px;
     transition: 0.3s;
-    margin: 5px
+    margin: 5px;
+    text-align: center;
+}
+
+.cuadro2{
+    width: 200px;
+    height: 50px;
+    line-height: 100px;
+    background-color: rgb(209, 89, 89);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 5px;
+    text-align: center;
 }
 
 .cuadricula{
