@@ -4,6 +4,21 @@ body{
     align-items: center;
     margin:0;
     height: 100vh;
+    padding-right: 100px;
+    padding-left: 100px;
+    max-height: 1000px;
+    max-width: 2000px;
+    background-color: lightsalmon;
+}
+
+.supercontenedor{
+    grid-template-rows: auto;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    padding-right: 75px;
+    align-items: center;
 }
 
 .contenedor{
@@ -16,18 +31,24 @@ body{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: left;
 }
 
 .contenedor3{
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 350px;
+    max-height: 635px;
 }
 
 .cuadro{
     width: 200px;
     height: 200px;
     line-height: 100px;
-    background-color: rgb(209, 89, 89);
+    background-color: rgb(245, 245, 220);
     color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 10px;
@@ -40,7 +61,7 @@ body{
     width: auto;
     height: 100px;
     line-height: 100px;
-    background-color: rgb(209, 89, 89);
+    background-color: rgb(245, 245, 220);
     color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 10px;
