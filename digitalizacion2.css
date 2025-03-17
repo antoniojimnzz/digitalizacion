@@ -9,6 +9,7 @@ body{
 .contenedor{
     display:grid;
     grid-template-columns: 3fr 1fr;
+
 }
 
 .contenedor2{
@@ -36,8 +37,8 @@ body{
 }
 
 .producto{
-    width: 200px;
-    height: 100;
+    width: auto;
+    height: 100px;
     line-height: 100px;
     background-color: rgb(209, 89, 89);
     color: rgb(0, 0, 0);
