@@ -77,3 +77,15 @@ body{
     text-align: center;
     gap: 10px;
 }
+
+.imagen{
+    max-height:50%;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+}
+
+.precio{
+    height: 100px;
+    width: 250px;
+}
