@@ -18,6 +18,8 @@ let imagen = ["https://www.cnature.es/wp-content/uploads/2021/12/hamburguesa-con
 "https://www.royalkebab-pizzeria.es/wp-content/uploads/2021/09/durum-1.png",]
 let carrito = document.getElementById (contenedor3)
 let total = 0;
+let totalDiv = document.createElement("div")
+let precioTotal = total + precioNum[numero_cuadros] + "€";
 
 function sumarCuadro(){
     let nuevoDiv = document.createElement("div");
@@ -36,21 +38,24 @@ function sumarCuadro(){
     cuadricula.appendChild(nuevoDiv);
     numero_cuadros = numero_cuadros + 1;
 }
+
 for(let numero_cuadros = 0;numero_cuadros < 12;numero_cuadros = numero_cuadros + 1){
     sumarCuadro();
 }
-
 
 function sumarProducto(numero){
     let nuevoProducto = document.createElement ("div");
 
     console.log(numero)
+
     nuevoProducto.textContent = nombre[numero] + precio[numero];
     nuevoProducto.classList.add("producto");
-    
+
     contenedor3.appendChild(nuevoProducto);
 
-    precioTotal = precioTotal + precioNum[numero]
+    totalDiv.classList.add("total");
+    contenedor3.appendChild(totalDiv)
+
+    total += precioNum[numero];
+    totalDiv.textContent = "Total: " + total.toFixed(2) + "€";
 }
-
-
